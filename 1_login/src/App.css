@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+body {
+  font-family: 'DotGothic16', sans-serif;
+  background-color: #f7f7f7;
+  color: #242424;
+  letter-spacing: 0.025rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: left;
+  max-width: 840px; 
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo-image {
+  width: 65px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 4.55rem;
+  font-weight: 500;
+  margin: 0;
+  color: #474747;
+  letter-spacing: 0.09rem;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.input-field {
+  font-size: 0.875rem;
+  font-family: 'DotGothic16', sans-serif;
+  letter-spacing: 0.025rem;
+  font-weight: 400;
+  width: 43%; 
+  height: 0.9rem;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 5px solid #474747;
+  background-color: #ffffff;
+  border-radius: 2.5rem;
+  color: #333;
+}
+
+.input-field::placeholder {
+  color: #aaaaaa;
+}
+
+.input-field:focus {
+  border-color: #333333;
+  color: #333;
+  outline: none;
+}
+
+.login-button {
+  display: inline-block;
+  height: 3.125rem; /* Reducir la altura del botón */
+  line-height: 3.125rem;
+  padding: 0 1.5rem; /* Ajustar el padding del botón */
+  background-color: #d6ff00;
+  border: none;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 0.875rem; /* Reducir el tamaño del texto del botón */
+  font-weight: 400;
+  color: #333;
+  transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.login-button:hover {
+  background-color: #d6ff00;
+  color: #333;
+  cursor: pointer;
+}
+
+.login-button:focus {
+  outline: none;
+}
+
+.register {
+  font-size: 1.1rem;
+  font-family: 'DotGothic16', sans-serif;
+  color: #000000;
+  background-color: #f7f7f7;
+  margin-top: 15px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.register:focus {
+  outline: none;
+}
+
+.register:hover {
+  outline: none;
+  background-color: #f7f7f7;
+  color: #000000;
+  cursor: pointer; 
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 1s ease-in forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-down {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInDown 1s ease-in forwards;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(10px);
+  animation: fadeInRight 1s ease-in forwards;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(0);
+  animation: fadeInSlide 1s ease-in forwards;
+}
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+body {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #f7f7f7;
+    color: #242424;
+    letter-spacing: 0.025rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+}
+
+
+.header {
+    width: 100%;
+    background-color: #f7f7f7;
+    color: #474747;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos a los extremos del header */
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    width: 100%;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    width: 40px;
+    margin-bottom: 0px;
+    border-radius: 50%;
+}
+
+.header-left p, .header-right p {
+    margin: 0;
+}
+
+.header-right {
+    margin-left: auto;
+}
+
+.header-button {
+    background: none;
+    border: none;
+    color: #474747;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    color: #ccc;
+}
+
+.register-page {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    width: 100%;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 0;
+    color: #474747;
+    letter-spacing: 0.09rem;
+    margin-bottom: -20px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000000;
+    margin-bottom: 40px;
+}
+
+hr2 {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000000;
+    margin-bottom: 1px;
+}
+
+.input-field-register, .file-button {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #ededed;
+    border: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    width: 100%; 
+    height: auto; 
+    box-sizing: border-box;
+}
+
+.input-field-register::placeholder {
+    color: #aaaaaa;
+}
+
+.input-file-hidden {
+    display: none;
+}
+
+.file-button {
+    text-align: left;
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+.file-button:hover {
+    background-color: #e0e0e0;
+}
+
+.file-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #333;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.register-button {
+    font-family: 'DotGothic16', sans-serif;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding: 15px;
+    background-color: #f7f7f7;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.register-button:hover {
+    outline: none;
+    background-color: #f7f7f7;
+    color: #000000;
+    cursor: pointer; 
+}
+
+.register-button::after {
+    margin-left: 10px;
+}
+
+.endtext {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.easteregg {
+    font-size: 0.6rem;
+    color: #555;
+    margin-top: 0px;
+}
