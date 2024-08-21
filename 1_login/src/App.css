@@ -80,16 +80,16 @@ h1 {
 
 .login-button {
   display: inline-block;
-  height: 3.125rem; /* Reducir la altura del botón */
+  height: 3.125rem;
   line-height: 3.125rem;
-  padding: 0 1.5rem; /* Ajustar el padding del botón */
+  padding: 0 1.5rem;
   background-color: #d6ff00;
   border: none;
   border-radius: 2.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   font-family: 'DotGothic16', sans-serif;
-  font-size: 0.875rem; /* Reducir el tamaño del texto del botón */
+  font-size: 0.875rem; 
   font-weight: 400;
   color: #333;
   transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;

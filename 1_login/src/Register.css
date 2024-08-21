@@ -29,8 +29,8 @@ body {
 
 .header-container {
     display: flex;
-    justify-content: space-between; /* Espacia los elementos a los extremos del header */
-    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
