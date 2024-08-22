@@ -22,54 +22,25 @@ function Register() {
   const handleFileButtonClick = (name) => {
     document.getElementById(name).click();
   };
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [menuClosing, setMenuClosing] = useState(false);
-
-  const toggleMenu = () => {
-      setMenuOpen(!menuOpen);
-  };
-  const closeMenu = () => {
-    if (menuOpen) {
-      setMenuClosing(true);
-      setTimeout(() => {
-        setMenuClosing(false);
-        setMenuOpen(false);
-      },500);
-    } else {
-      setMenuOpen(true);
-    }
-  };
 
   return (
-    <div className="register-page fade-in-register">
-        <header className='header'>
+    <>
+    <header className='header fade-in'>
             <div className="header-container">
             <div className="header-left">
                 <img src="logo.png" alt="Logo" className="logo-image" />
             </div>
             <div>
+              <p className='header-middle'>
                 CTRL+V Demo
+              </p>
             </div>
             <div className="header-right">
-                <button className="header-button" onClick={toggleMenu}>☰</button>
+                <button className="header-button">☰</button>
             </div>
             </div>
-        </header>
-
-        {menuOpen && (
-        <div className="overlay">
-          <div className={`menu-centered ${menuClosing ? 'fade-out' : 'fade-in-register'}`}>
-            <button className="close-button" onClick={closeMenu}>✕</button>
-            <a href="#">Create Agent</a>
-            <a href="#">Agent Library</a>
-            <a href="#">Pre-Order</a>
-            <a href="#">Partner</a>
-            <a href="#">Invest</a>
-            <a href="#">Contact</a>
-          </div>
-        </div>  
-      )}
-
+    </header>
+    <div className="register-page fade-in-register">
       <h1 className="title">Register</h1>
       <p className="subtitle">Sign up and KYC to use the platform</p>
       <hr />
@@ -126,6 +97,7 @@ function Register() {
             We only put this here to see if anyone would read it. If you are reading it, contact us to let us know how clever and detail oriented you are.
         </p>
     </div>
+    </>
   );
 }
 
