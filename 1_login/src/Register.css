@@ -23,7 +23,6 @@ body {
     background-color: #f7f7f7;
     color: #474747;
     padding: 20px;
-    box-sizing: border-box;
     margin-top: 10px;
 }
 
@@ -64,6 +63,93 @@ body {
 .header-button:hover {
     color: #ccc;
 }
+
+.fade-out {
+    opacity: 0;
+    animation: fadeOutSlide 1s ease-in forwards;
+}
+
+@keyframes fadeOutSlide {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+  }
+
+.fade-in-register {
+    opacity: 0;
+    transform: translateY(0);
+    animation: fadeInSlide 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInSlide {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+  
+.menu-centered {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    position: fixed;
+    width: 300px;
+    opacity: 1;
+    color: #333;
+}
+  
+.menu-centered a {
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+  
+.menu-centered a:hover {
+    background-color: transparent;
+    color: #474747;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 20px; 
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.close-button:hover {
+    color: #ccc;
+  }
 
 .register-page {
     display: flex;

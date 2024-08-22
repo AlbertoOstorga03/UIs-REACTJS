@@ -22,9 +22,26 @@ function Register() {
   const handleFileButtonClick = (name) => {
     document.getElementById(name).click();
   };
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuClosing, setMenuClosing] = useState(false);
+
+  const toggleMenu = () => {
+      setMenuOpen(!menuOpen);
+  };
+  const closeMenu = () => {
+    if (menuOpen) {
+      setMenuClosing(true);
+      setTimeout(() => {
+        setMenuClosing(false);
+        setMenuOpen(false);
+      },500);
+    } else {
+      setMenuOpen(true);
+    }
+  };
 
   return (
-    <div className="register-page">
+    <div className="register-page fade-in-register">
         <header className='header'>
             <div className="header-container">
             <div className="header-left">
@@ -33,11 +50,26 @@ function Register() {
             <div>
                 CTRL+V Demo
             </div>
-            <div className="header.right">
-                <button className="header-button">☰</button>
+            <div className="header-right">
+                <button className="header-button" onClick={toggleMenu}>☰</button>
             </div>
             </div>
         </header>
+
+        {menuOpen && (
+        <div className="overlay">
+          <div className={`menu-centered ${menuClosing ? 'fade-out' : 'fade-in-register'}`}>
+            <button className="close-button" onClick={closeMenu}>✕</button>
+            <a href="#">Create Agent</a>
+            <a href="#">Agent Library</a>
+            <a href="#">Pre-Order</a>
+            <a href="#">Partner</a>
+            <a href="#">Invest</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>  
+      )}
+
       <h1 className="title">Register</h1>
       <p className="subtitle">Sign up and KYC to use the platform</p>
       <hr />

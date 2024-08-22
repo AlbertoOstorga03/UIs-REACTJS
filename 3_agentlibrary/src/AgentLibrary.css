@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+.container {
+  text-align: left;
+  max-width: 1000px; 
+  margin: 0 auto;
+  padding: 20px;
+  padding-left: 0;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #333;
+}	
+
+hr:last-child {
+    border: 0;
+    height: 1px;
+    background: #333;
+    margin-top: 60px;
+  }	
+
+body {
+  font-family: 'DotGothic16', sans-serif;
+  background-color: #f7f7f7;
+  color: #242424;
+  letter-spacing: 0.025rem;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.header {
+  width: 81vw;
+  background-color: #f7f7f7;
+  color: #474747;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1800px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    margin-right: 260px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-center {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+.header-left img {
+    width: 40px;
+    margin-bottom: 0px;
+    border-radius: 50%;
+}
+
+.header-left p, .header-right p, .header-center p {
+    margin: 0;
+}
+
+.header-right {
+    margin-left: auto;
+}
+
+.header-button {
+    background: none;
+    border: none;
+    color: #474747;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    color: #ccc;
+}
+
+.title {
+    font-size: 3.7rem;
+    font-weight: 300;
+    margin: 0;
+    color: #333;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.description {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.action-button {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: flex-start;
+    margin: 0;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 55px;
+}	
+
+.action-button:hover {
+    outline: none;
+    text-decoration:underline;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    letter-spacing: 0.025rem;
+    line-height: 2;
+    margin-bottom: 80px;
+  }
+  
+  table tr {
+    border-bottom: 1px solid #474747;
+  }
+
+  table thead:first-child {
+    border-bottom: 2px solid #333;
+  }
+
+    table th:nth-child(1), table td:nth-child(1) { width: 25%; } /* Name column */
+    table th:nth-child(2), table td:nth-child(2) { width: 20%; } /* Model column */
+    table th:nth-child(3), table td:nth-child(3) { width: 25%; } /* Service column */
+    table th:nth-child(4), table td:nth-child(4) { width: 12%; } /* DID column */
+    table th:nth-child(5), table td:nth-child(5) { width: 16.66%; } /* Secure ID column */
+    table th:nth-child(6), table td:nth-child(6) { width: 16.66%; } /* Action column */    
+
+  table th {
+    text-align: left;
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+  }
+
+  table td {
+    padding: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+  }
+
+  table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+
+
+.endtext {
+    font-size: 0.9rem;
+    color: #474747;
+    margin-top: 15px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #474747;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.easteregg {
+    font-size: 0.53rem;
+    color: #474747;
+    margin-top: 0px;
+    letter-spacing: 0.025rem;
+}
+
+.action-button-chat {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 1rem;
+    background-color: #474747;
+    color: #f7f7f7;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-left: 5px solid #474747;
+    border-right: 5px solid #474747;
+}
