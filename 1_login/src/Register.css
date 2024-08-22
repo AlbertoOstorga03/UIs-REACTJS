@@ -208,6 +208,12 @@ hr2 {
     color: #aaaaaa;
 }
 
+.input-field-register:focus {
+    outline: none;
+    border-color: #333;
+    color: #333;
+}
+
 .input-file-hidden {
     display: none;
 }
