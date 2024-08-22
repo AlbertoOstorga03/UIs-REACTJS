@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import './App.css'
 import Register from './Register'
+import MobileMenu from './MobileMenu';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
 
 function App() {
@@ -12,9 +13,11 @@ function App() {
           <Route path='/' element={<Home/>} />
           {/* Register */}
           <Route path='/register' element={<Register/>} />
+          {/* Mobile Menu */}
+          <Route path='/mobile-menu' element={<MobileMenu/>} />
         </Routes>
       </div>
-    </Router>
+    </Router> 
   );
 };
 

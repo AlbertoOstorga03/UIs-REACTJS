@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Register.css';
+
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -11,6 +13,8 @@ function Register() {
     selfie: null,
   });
 
+  const navigate = useNavigate();
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -21,6 +25,10 @@ function Register() {
   };
   const handleFileButtonClick = (name) => {
     document.getElementById(name).click();
+  };
+
+  const goToMenu = () => {
+    navigate('/mobile-menu');
   };
 
   return (
@@ -36,7 +44,7 @@ function Register() {
               </p>
             </div>
             <div className="header-right">
-                <button className="header-button">☰</button>
+                <button className="header-button" onClick={goToMenu}>☰</button>
             </div>
             </div>
     </header>

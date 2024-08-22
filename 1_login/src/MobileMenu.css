@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+.mobile-menu {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative; /* Posicionamiento relativo para colocar "Back" en una posición absoluta */
+}
+
+.back {
+    position: absolute; /* Posiciona el botón "Back" de manera absoluta */
+    top: 150px; /* Alinea el botón en la parte superior */
+    right: 525px; /* Alinea el botón a la derecha */
+    background-color: transparent; /* Color diferente para el botón "Back" */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10; /* Asegura que el botón "Back" esté por encima de los demás elementos */
+}
+
+.action-button {
+    font-family: 'DotGothic16', sans-serif;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 22px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(0);
+    animation: fadeInSlide 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInSlide {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
