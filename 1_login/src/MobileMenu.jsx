@@ -14,7 +14,7 @@ function MobileMenu() {
 
     const goToCreateAgent = ()  => {
         navigate('/create-agent'); // Navega a la ruta '/create-agent'
-    }
+    }  
 
     return (
     <>

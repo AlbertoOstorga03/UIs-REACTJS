@@ -9,6 +9,10 @@ function AgentLibrary() {
   const goToMenu = ()  => {
     navigate('/mobile-menu'); // Navega a la ruta '/mobile-menu'
   }
+
+  const goToChat = ()  => {
+    navigate('/chat'); // Navega a la ruta '/chat'
+  }
   
   return (
     <>
@@ -58,7 +62,7 @@ function AgentLibrary() {
             <td>Personal Finance</td>
             <td>View</td>
             <td>View</td>
-            <td><button className="action-button-chat-3">Chat</button></td>
+            <td><button className="action-button-chat-3" onClick={goToChat}>Chat</button></td>
           </tr>
           <tr>
             <td>Physician</td>
@@ -66,7 +70,7 @@ function AgentLibrary() {
             <td>Healthcare</td>
             <td>View</td>
             <td>View</td>
-            <td><button className="action-button-chat-3">Chat</button></td>
+            <td><button className="action-button-chat-3" onClick={goToChat}>Chat</button></td>
           </tr>
           <tr>
             <td>Physics Professor</td>
@@ -74,7 +78,7 @@ function AgentLibrary() {
             <td>Higher Education</td>
             <td>View</td>
             <td>View</td>
-            <td><button className="action-button-chat-3">Chat</button></td>
+            <td><button className="action-button-chat-3" onClick={goToChat}>Chat</button></td>
           </tr>
         </tbody>
       </table>
