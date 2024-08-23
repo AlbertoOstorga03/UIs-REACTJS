@@ -8,13 +8,20 @@ function MobileMenu() {
     const handleBackClick = () => {
         navigate(-1); // Navega a la ventana anterior en el historial
     };
+    const goToAgentLibrary = ()  => {
+        navigate('/agent-library'); // Navega a la ruta '/agent-library'
+    }
+
+    const goToCreateAgent = ()  => {
+        navigate('/create-agent'); // Navega a la ruta '/create-agent'
+    }
 
     return (
     <>
     <div>
         <button className="back fade-in" onClick={handleBackClick}>✕</button>
-        <button className="action-button fade-in">Create Agent</button>
-        <button className="action-button fade-in">Agent Library</button>
+        <button className="action-button fade-in" onClick={goToCreateAgent}>Create Agent</button>
+        <button className="action-button fade-in" onClick={goToAgentLibrary}>Agent Library</button>
         <button className="action-button fade-in">Pre-Order</button>
         <button className="action-button fade-in">Partner</button>
         <button className="action-button fade-in">Invest</button>

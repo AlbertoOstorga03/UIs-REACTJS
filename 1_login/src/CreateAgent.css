@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+body {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #f7f7f7;
+    color: #242424;
+    letter-spacing: 0.025rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+  }	
+  
+.hrlast {
+      border: 0;
+      height: 1px;
+      background: #333;
+      margin-top: 15px;
+      padding-bottom: 0;
+      margin-bottom: 5px;
+    }	
+
+.header-4 {
+    width: 81vw;
+    background-color: #f7f7f7;
+    color: #474747;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 40px;
+  }
+  
+.header-container-4 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1800px;
+  }
+  
+.header-left-4 {
+      display: flex;
+      align-items: center;
+      margin-right: 260px;
+  }
+  
+.header-right-4 {
+      display: flex;
+      align-items: center;
+  }
+  
+.header-center-4 {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      color: #333;
+  }
+  
+.header-left-4 img {
+      width: 40px;
+      margin-bottom: 0px;
+      border-radius: 50%;
+  }
+  
+.header-left-4 p, .header-right-4 p, .header-center-4 p {
+      margin: 0;
+  }
+  
+.header-right-4 {
+      margin-left: auto;
+  }
+  
+.header-button-4 {
+      background: none;
+      border: none;
+      color: #474747;
+      font-size: 24px;
+      cursor: pointer;
+  }
+  
+.header-button-4:hover {
+      color: #ccc;
+  }
+
+.title-4 {
+    font-size: 3.7rem;
+    font-weight: 300;
+    margin: 0;
+    color: #474747;
+    margin-bottom: 0;
+    padding-top: 50px;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.description-4 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}  
+
+.createAgent-page {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+}
+
+.input-field-agentName {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #ededed;
+    border: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    width: 85%; 
+    height: auto; 
+    box-sizing: border-box;
+}
+
+.select-field-agentObjective {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #ededed;
+    border: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    width: 85%; 
+    height: auto; 
+    box-sizing: border-box;
+}
+
+.select-field-agentModel {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #ededed;
+    border: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    width: 85%; 
+    height: auto; 
+    box-sizing: border-box;
+}
+
+.textarea-field-agentPurpose {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #ededed;
+    border: none;
+    padding: 12px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    padding-bottom: 0;
+    font-size: 14px;
+    width: 85%; 
+    height: 160px; 
+    box-sizing: border-box;
+}
+
+.createAgent-button {
+    font-family: 'DotGothic16', sans-serif;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-color: #f7f7f7;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.createAgent-button:hover {
+    outline: none;
+    background-color: #f7f7f7;
+    color: #000000;
+    cursor: pointer; 
+}
+
+.createAgent-button::after {
+    margin-left: 10px;
+}
+
+.copyright-4 {
+    font-size: 0.8rem;
+    color: #474747;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.easteregg-4 {
+    font-size: 0.53rem;
+    color: #474747;
+    margin-top: 0px;
+    letter-spacing: 0.025rem;
+}

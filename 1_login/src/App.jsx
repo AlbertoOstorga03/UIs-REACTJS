@@ -2,12 +2,14 @@ import React, { useEffect } from 'react'
 import './App.css'
 import Register from './Register'
 import MobileMenu from './MobileMenu';
+import AgentLibrary from './AgentLibrary';
+import CreateAgent from './CreateAgent';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
 
 function App() {
   return (
     <Router>
-      <div className="wrapper">
+      <div className="styles.wrapper">
         <Routes>
           {/* Home */}
           <Route path='/' element={<Home/>} />
@@ -15,6 +17,10 @@ function App() {
           <Route path='/register' element={<Register/>} />
           {/* Mobile Menu */}
           <Route path='/mobile-menu' element={<MobileMenu/>} />
+          {/* Agent Library */}
+          <Route path='/agent-library' element={<AgentLibrary/>} />
+          {/* Create Agent */}
+          <Route path='/create-agent' element={<CreateAgent/>} />
         </Routes>
       </div>
     </Router> 
