@@ -1,0 +1,158 @@
+body {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #f7f7f7;
+    color: #242424;
+    letter-spacing: 0.025rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-5 {
+    text-align: left;
+    max-width: 1000px; 
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.header-5 {
+    width: 81vw;
+    background-color: #f7f7f7;
+    color: #474747;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 40px;
+}
+  
+.header-container-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1800px;
+}
+  
+.header-left-5 {
+    display: flex;
+    align-items: center;
+    margin-right: 260px;
+}
+  
+.header-right-5 {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+  
+.header-center-5 {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+}
+  
+.header-left-5 img {
+    width: 40px;
+    margin-bottom: 0px;
+    border-radius: 50%;
+}
+  
+.header-left-5 p, .header-right-5 p, .header-center-5 p {
+    margin: 0;
+}
+  
+.header-button-5 {
+    background: none;
+    border: none;
+    color: #474747;
+    font-size: 24px;
+    cursor: pointer;
+}
+  
+.header-button-5:hover {
+    color: #ccc;
+}
+
+.title-5 {
+    font-size: 3.7rem;
+    font-weight: 300;
+    margin: 0;
+    color: #474747;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.description-5 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.chat-common {
+    display: flex;
+    font-size: 0.7rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.chat-1-5, .chat-3-5 {
+    justify-content: flex-end;
+    margin-right: 150px;
+    margin-left: 250px;
+}
+
+.chat-2-5, .chat-4-5 {
+    justify-content: flex-start;
+    margin-left: 150px;
+    margin-right: 250px;
+}
+
+.input-field-response {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #ededed;
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    font-size: 14px;
+    width: 70%; 
+    height: auto; 
+    box-sizing: border-box;
+    display: block;
+    text-decoration: none;
+}
+
+.input-field-response:hover {
+    outline: none;
+    text-decoration:none;
+}
+
+.copyright-5 {
+    font-size: 0.8rem;
+    color: #474747;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.easteregg-5 {
+    font-size: 0.53rem;
+    color: #474747;
+    margin-top: 0px;
+    letter-spacing: 0.025rem;
+}

@@ -36,29 +36,29 @@ function Chat() {
             </div>
         </header>
     <div className="container-5">
-        <h1 className='title-5 fade-in-up'>Agent Library</h1>
+        <h1 className='title-5 fade-in-up'>Communicate</h1>
             <p className="description-5 fade-in-right">
-                This step allows you to create, name, and apply a human-readable, traceable digital ID to an AI Agent.
+                Converse with secured and trusted Agents accountable to you and have your best interests in mind.
             </p>
                 <hr/>
-                    <p className="chat-1-5">
+                    <p className="chat-common chat-1-5">
                         Please identify yourself.
                     </p>
-                    <p className="chat-2-5">
+                    <p className="chat-common chat-2-5">
                         My Agent ID is 0x9d13c22706e42b98d4a83ca91ec392ddf9c8b2169c9b3c8d43127a0b34085581 and I'm secured
                         at 0x8e5bac5773e47e257c6823c1048d9df93f073fba1016d607bb8c3426ac36e7d2, but please call me Demo Agent. 
                         In case you're interested, I was born on June 29, 2024. Is there anything else I can help you with?
                     </p>
-                    <p className="chat-3-5">
+                    <p className="chat-common chat-3-5">
                         Thanks Demo Agent. Who are you accountable to?
                     </p>
-                    <p className="chat-4-5">
+                    <p className="chat-common chat-4-5">
                         I'm accountable to 0x572c242b59cfcbb1e02391b6dbf326c795fc2e6ad50d24aedce7164bb906609e and I'm here to assist you.
                     </p>
                     {/* Chat Response */}
                     <InputFieldChat
                     name="response"
-                    placeholder=" "
+                    placeholder=""
                     value={chatData.response}
                     onChange={handleInputChange}
                     />
