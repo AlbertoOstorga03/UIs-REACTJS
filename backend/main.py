@@ -17,12 +17,12 @@ def register():
     address = data.get('address')
     password = data.get('password')
 
-    # Manejo de archivos
+    # Files management
     passport_copy = request.files.get('passportCopy')
     drivers_license_copy = request.files.get('driversLicenseCopy')
     selfie_with_id = request.files.get('selfieWithPassportOrDriversLicenseCopy')
 
-    # Guardar archivos
+    # Save files
     if passport_copy:
         passport_filename = secure_filename(passport_copy.filename)
         passport_copy.save(os.path.join(app.config['UPLOAD_FOLDER'], passport_filename))
@@ -41,7 +41,7 @@ def register():
     else:
         selfie_filename = None
 
-    # Crear nuevo usuario
+    # Creat new user
     new_user = User(
         username=username,
         email=email,
