@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import Register from './Register'
 import MobileMenu from './MobileMenu';
@@ -30,38 +30,61 @@ function App() {
   );
 };
 
-
 function Home() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleLogin = async () => {
+    const response = await fetch('http://localhost:5000/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ username, password }),
+    });
+
+    const data = await response.json();
+    if (response.ok) {
+      alert('Login successful');
+      navigate('/agent-library'); // Redirige al usuario a la biblioteca de agentes tras un inicio de sesión exitoso
+    } else {
+      alert(data.message);
+    }
+  };
 
   return (
-      <div className="container">
-        <div className="logo fade-in-down">
-          <img src="logo.png" alt="Logo" className="logo-image" />
-        </div>
-        <h1 className='title fade-in-up'>Universal AI Registry</h1>
-        <p className="description fade-in-right">
-          Welcome to the CTRL+V demo. A simple proof of concept showcasing the ability to assign a human-readable and traceable digital ID to an AI Agent.
-        </p>
-
-        <input 
-          type="text" 
-          placeholder="Username" 
-          className="input-field fade-in"
-        />
-        <br />
-        <input 
-          type="text" 
-          placeholder="Password" 
-          className="input-field fade-in"
-        />
-        <br />
-        <button className="login-button fade-in">Login</button>
-        <br />
-        <button className="register fade-in-right" onClick={() => navigate('/register')}>Register to view</button>
-        <br />
+    <div className="container">
+      <div className="logo fade-in-down">
+        <img src="logo.png" alt="Logo" className="logo-image" />
       </div>
+      <h1 className='title fade-in-up'>Universal AI Registry</h1>
+      <p className="description fade-in-right">
+        Welcome to the CTRL+V demo. A simple proof of concept showcasing the ability to assign a human-readable and traceable digital ID to an AI Agent.
+      </p>
+
+      <input 
+        type="text" 
+        placeholder="Username" 
+        className="input-field fade-in"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      />
+      <br />
+      <input 
+        type="password" 
+        placeholder="Password" 
+        className="input-field fade-in"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+      <br />
+      <button className="login-button fade-in" onClick={handleLogin}>Login</button>
+      <br />
+      <button className="register fade-in-right" onClick={() => navigate('/register')}>Register to view</button>
+      <br />
+    </div>
   );
 };
 
-export default App
+export default App;
