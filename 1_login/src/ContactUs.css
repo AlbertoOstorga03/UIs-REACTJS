@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+html, body {
+    height: 100%; /* Asegura que el body y html ocupen el 100% del alto de la pantalla */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra verticalmente el contenido */
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    max-width: 480px; /* Ajusta el ancho máximo si es necesario */
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.title-contact-us {
+    font-family: 'DotGothic16', sans-serif;
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.back {
+    position: absolute; 
+    top: -30px; 
+    right: 18px;
+    background-color: transparent; 
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.input-field-contact-us {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #ededed;
+    border: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.textarea-field-contact-us {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #ededed;
+    border: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    height: 150px;
+}
+
+.submit-contact-us-button {
+    font-family: 'DotGothic16', sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-color: #f7f7f7;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.submit-contact-us-button:hover {
+    outline: none;
+    background-color: #f7f7f7;
+    color: #000000;
+    cursor: pointer; 
+}
+
+.submit-contact-us-button::after {
+    margin-left: 10px;
+}

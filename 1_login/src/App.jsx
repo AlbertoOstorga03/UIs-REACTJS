@@ -5,6 +5,7 @@ import MobileMenu from './MobileMenu';
 import AgentLibrary from './AgentLibrary';
 import CreateAgent from './CreateAgent';
 import Chat from './Chat';
+import ContactUs from './ContactUs';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
           <Route path='/create-agent' element={<CreateAgent/>} />
           {/* Chat */}	
           <Route path='/chat' element={<Chat/>} />
+          {/* Contact Us */}
+          <Route path='/contact-us' element={<ContactUs/>} />
         </Routes>
       </div>
     </Router> 

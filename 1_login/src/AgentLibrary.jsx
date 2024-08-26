@@ -7,12 +7,16 @@ function AgentLibrary() {
   const navigate = useNavigate();
   
   const goToMenu = ()  => {
-    navigate('/mobile-menu'); // Navega a la ruta '/mobile-menu'
+    navigate('/mobile-menu'); // Navigate to the route '/mobile-menu'
   }
 
   const goToChat = ()  => {
-    navigate('/chat'); // Navega a la ruta '/chat'
+    navigate('/chat'); // Navigate to the route '/chat'
   }
+
+  const goToCreateAgent = ()  => {
+    navigate('/create-agent'); // Navigate to the route '/create-agent'
+}  
   
   return (
     <>
@@ -40,7 +44,7 @@ function AgentLibrary() {
     <hr/>
       <div className="button-container-3">
         <button className="action-button-3">Total Agents: 3</button>
-        <button className="action-button-3">Create Agent</button>
+        <button className="action-button-3" onClick={goToCreateAgent}>Create Agent</button>
         <button className="action-button-3">Agent Explorer</button>
       </div>
 
