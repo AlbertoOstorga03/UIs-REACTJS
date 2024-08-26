@@ -20,7 +20,7 @@ function Chat() {
 
     return(
         <>
-        <header className='header-5 fade-in-up'>
+        <header className='header-5 fade-in'>
             <div className="header-container-5">
                 <div className="header-left-5">
                     <img src="logo.png" alt="Logo" className="logo-image" />
@@ -35,7 +35,7 @@ function Chat() {
                 </div>
             </div>
         </header>
-    <div className="container-5">
+    <div className="container-5 fade-in">
         <h1 className='title-5 fade-in-up'>Communicate</h1>
             <p className="description-5 fade-in-right">
                 Converse with secured and trusted Agents accountable to you and have your best interests in mind.

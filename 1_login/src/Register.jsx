@@ -48,7 +48,6 @@ function Register() {
 
     const data = await response.json();
     if (response.ok) {
-      alert('Registration successful');
       navigate('/');
     } else {
       alert(data.message);

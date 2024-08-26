@@ -46,9 +46,9 @@ function Home() {
 
     const data = await response.json();
     if (response.ok) {
-      alert('Login successful');
-      navigate('/agent-library'); // Redirige al usuario a la biblioteca de agentes tras un inicio de sesión exitoso
+      navigate('/agent-library');
     } else {
+      data.message = 'Invalid username or password, try again.';
       alert(data.message);
     }
   };

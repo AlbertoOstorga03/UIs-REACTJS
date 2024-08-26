@@ -23,7 +23,7 @@ function CreateAgent() {
 
     return (
         <>
-        <header className='header-4 fade-in-up'>
+        <header className='header-4 fade-in'>
             <div className="header-container-4">
                 <div className="header-left-4">
                     <img src="logo.png" alt="Logo" className="logo-image" />
@@ -38,9 +38,9 @@ function CreateAgent() {
                 </div>
             </div>
         </header>
-        <div className="createAgent-page fade-in-up">
-            <h1 className="title-4">Create Agent</h1>
-            <p className="subtitle-4">Agents are created on this page. Users define the type and objectives their Agents should have.</p>
+        <div className="createAgent-page fade-in">
+            <h1 className="title-4 fade-in-up">Create Agent</h1>
+            <p className="subtitle-4 fade-in-right">Agents are created on this page. Users define the type and objectives their Agents should have.</p>
             <hr />
             <form className="createAgent-form">
                 {/* Agent Name Input */}

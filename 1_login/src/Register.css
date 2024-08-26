@@ -23,7 +23,7 @@ body {
     background-color: #f7f7f7;
     color: #474747;
     padding: 0px;
-    margin-top: 0px;
+    margin-top: 100px;
     margin-bottom: 40px;
     position: relative;
     left: 0;
@@ -226,7 +226,7 @@ hr2 {
 .copyright {
     font-size: 0.8rem;
     color: #555;
-    margin-top: 5px;
+    margin-top: -20px;
     margin-bottom: 0px;
 }
 

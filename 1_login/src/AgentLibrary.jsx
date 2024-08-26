@@ -16,7 +16,7 @@ function AgentLibrary() {
   
   return (
     <>
-      <header className='header-3'>
+      <header className='header-3 fade-in'>
             <div className="header-container-3">
             <div className="header-left-3">
                 <img src="logo.png" alt="Logo" className="logo-image" />
@@ -32,7 +32,7 @@ function AgentLibrary() {
             </div>
         </header>
         
-    <div className="container-3">
+    <div className="container-3 fade-in">
     <h1 className='title-3 fade-in-up'>Agent Library</h1>
       <p className="description-3 fade-in-right">
         This step allows you to create, name, and apply a human-readable, traceable digital ID to an AI Agent.
