@@ -2,17 +2,33 @@ import { useState } from 'react';
 import './Chat.css';
 import { useNavigate } from 'react-router-dom';
 
+/*
+
+Right now this code is just a static page with a chat interface. In doesn't work as a chat interface yet.
+The idea is to have a chat interface that allows the user to communicate with an AI agent. The agent will 
+have a DID and a secure ID, and the user will be able to ask questions and get responses from the agent.
+
+A recode of this section is needed to make it work as a chat.
+
+*/
+
+
 function Chat() {
 
+    {/* Initialize the navigate */}
     const navigate = useNavigate();
 
+    {/* Function to navigate to the menu page */}
     const goToMenu = () => {
         navigate('/mobile-menu');
     };
 
+    {/* Initialize the chatData state */}
     const [chatData, setChatData] = useState({
         response: '',
     });
+
+    {/* Handle input change */}
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setChatData({ ...chatData, [name]: value });
@@ -76,6 +92,7 @@ function Chat() {
     );
 };
 
+{/* Input field for chat */}
 function InputFieldChat({ name, placeholder, value, onChange }) {
     return (
         <input

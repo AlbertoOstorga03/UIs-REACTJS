@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 function CreateAgent() {
     const navigate = useNavigate();
     
+    {/* Initialize the formData state */}
     const [formData, setFormData] = useState({
         agentName: '',
         agentObjective: '- Objective -',
@@ -104,6 +105,7 @@ function CreateAgent() {
     );
 }
 
+{/* InputFieldCreateName component */}
 function InputFieldCreateName({ name, placeholder, value, onChange }) {
     return (
         <input
@@ -117,6 +119,7 @@ function InputFieldCreateName({ name, placeholder, value, onChange }) {
     );
 }
 
+{/* AgentPurposeTextarea component */}
 function AgentPurposeTextarea({ name, placeholder, value, onChange }) {
     return (
         <textarea

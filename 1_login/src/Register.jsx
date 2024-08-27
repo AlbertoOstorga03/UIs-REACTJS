@@ -4,6 +4,7 @@ import './Register.css';
 import axios from 'axios';
 
 function Register() {
+  {/* Initialize the formData state */}
   const [formData, setFormData] = useState({
     username: '',
     name: '',
@@ -17,23 +18,28 @@ function Register() {
 
   const navigate = useNavigate();
 
+  {/* Handle input change */}
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  {/* Handle file change */}
   const handleFileChange = (e) => {
     const { name, files } = e.target;
     setFormData({ ...formData, [name]: files[0] });
   };
-
+  
+  {/* Handle file button click */}
   const handleFileButtonClick = (name) => {
     document.getElementById(name).click();
   };
 
+  {/* Handle form submit */}
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    {/* Create a new FormData object */}
     const formDataToSend = new FormData();
     formDataToSend.append('name', formData.name);
     formDataToSend.append('email', formData.email);
@@ -43,12 +49,14 @@ function Register() {
     formDataToSend.append('driversLicenseCopy', formData.driversLicenseCopy);
     formDataToSend.append('selfieWithPassportOrDriversLicenseCopy', formData.selfieWithPassportOrDriversLicenseCopy);
 
-    const response = await fetch('https://agent-api.anika-ai.tech/register', {
-      method: 'POST',
-      body: formDataToSend,
-    });
+  {/* Post the form data in the database */}
+  const response = await fetch('https://agent-api.anika-ai.tech/register', {
+    method: 'POST',
+    body: formDataToSend,
+  });
 
-    const data = await response.json();
+  {/* If the response is successful, navigate to the home page, else, display message */}
+  const data = await response.json();
     if (response.ok) {
       navigate('/');
     } else {
@@ -56,6 +64,7 @@ function Register() {
     }
   };
 
+  {/* Go to the menu */}
   const goToMenu = () => {
     navigate('/mobile-menu');
   };
@@ -144,6 +153,7 @@ function Register() {
   );
 }
 
+{/* InputField2 component: reusable input field for the form*/}
 function InputField2({ name, placeholder, value, onChange }) {
   return (
     <input
@@ -157,6 +167,7 @@ function InputField2({ name, placeholder, value, onChange }) {
   );
 }
 
+{/* FileButton component: reusable button for file inputs */}
 function FileButton({ name, placeholder, onClick, file, onChange }) {
   return (
     <div className="file-input-field">

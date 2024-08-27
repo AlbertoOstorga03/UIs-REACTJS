@@ -9,6 +9,7 @@ import ContactUs from './ContactUs';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
 import axios from 'axios';
 
+// Main application component that defines the routes and general layout of the application
 function App() {
   return (
     <Router>
@@ -34,12 +35,13 @@ function App() {
   );
 };
 
+// Home screen component (login)
 function Home() {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const API_URL = "https://agent-api.anika-ai.tech";
 
+  {/* Post username and password in the database */}
   const handleLogin = async () => {
     const response = await fetch("https://agent-api.anika-ai.tech/login", {
       method: 'POST',
@@ -49,6 +51,7 @@ function Home() {
       body: JSON.stringify({ username, password }),
     });
 
+    {/* If the response is successful, navigate to the agent library, else, display message */}
     const data = await response.json();
     if (response.ok) {
       navigate('/agent-library');
