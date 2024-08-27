@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Register.css';
+import axios from 'axios';
 
 function Register() {
   const [formData, setFormData] = useState({
+    username: '',
     name: '',
     email: '',
     address: '',
@@ -41,7 +43,7 @@ function Register() {
     formDataToSend.append('driversLicenseCopy', formData.driversLicenseCopy);
     formDataToSend.append('selfieWithPassportOrDriversLicenseCopy', formData.selfieWithPassportOrDriversLicenseCopy);
 
-    const response = await fetch('http://localhost:5000/register', {
+    const response = await fetch('https://agent-api.anika-ai.tech/register', {
       method: 'POST',
       body: formDataToSend,
     });

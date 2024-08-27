@@ -7,6 +7,7 @@ import CreateAgent from './CreateAgent';
 import Chat from './Chat';
 import ContactUs from './ContactUs';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom'
+import axios from 'axios';
 
 function App() {
   return (
@@ -37,9 +38,10 @@ function Home() {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const API_URL = "https://agent-api.anika-ai.tech";
 
   const handleLogin = async () => {
-    const response = await fetch('http://localhost:5000/login', {
+    const response = await fetch("https://agent-api.anika-ai.tech/login", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
